@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+  margin: 0; 
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.post_job_description{
+  background-image:url("images/1.png") ;
+
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+   display: flex;
+   justify-content:left;
+   margin-bottom: 40px;
+
+  }
+  .post_job_description_left{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 30px;
+   color:rgb(37, 37, 37);
+   background-color: transparent;
+  }
+  .post_job_description_left_text{
+    
+    font-size: 25px;
+    font-weight: 1000;
+    text-align: left;
+    Text-shadow: 2px 2px rgba(216, 189, 189, 0.3);
+   
+  }
+
+ 
+.post_job_description_left_button {
+background-color: transparent;
+color: white;
+
+font-size: 25px;
+font-weight: 600;
+border-radius: 10px;
+border: 3px solid #14186B;
+animation-name:post_job_description_left_button_animation;
+animation:post_job_description_left_button_animation 5s infinite;
+cursor: pointer;
+}
+
+@keyframes post_job_description_left_button_animation{
+
+  25% {color:rgb(33, 44, 204)}
+  
+  50% {color:cornsilk}
+    }
+.post_job_description_left_button:hover{
+  background-color: black;
+ 
+}
+
+
+
+  .post_job_description_text{
+
+    font-family: 'Patua One', cursive;
+  
+   font-size: 50px;
+   font-weight: 600;
+   text-align: center;
+   margin: auto; 
+   color: rgb(75, 66, 95); 
+   Text-shadow: 2px 2px rgba(216, 189, 189, 0.3);
+   
+  }
+
+
+
+p{
+   
+    font-size: 65px;
+    line-height: 56px;
+    text-align: center;
+    color: #14186B; 
+    
+    margin: auto;
+}
+.underline{
+    width: 20%;
+    height: 7px;;
+    background: #524BA4;
+    border-radius: 48px;
+    margin:auto;
+
+}
+form{
+ width: 80%;
+ margin: auto; 
+ padding-top: 40px;
+ font-family: 'Open Sans', sans-serif;
+
+}
+.labelfield{
+    
+font-size: 28px;
+line-height: 42px;
+color: #192a56;
+margin: auto;
+
+    
+}
+.inputfield{
+ width:90%;
+ padding: 12px;
+ border: none;
+ border-bottom: 1px solid #ccc;
+ border-radius: 2px;
+ resize: vertical; 
+ margin-bottom: 20px;
+ font-size:20px ;
+}
+.inputfield:hover{ 
+ 
+border-bottom:  3px  solid rgb(147, 150, 150);
+
+}
+.inputfield:focus{
+border-top: 0;
+border-left: 0;
+border-left: 0;
+outline: 0;
+border-bottom:  3px  solid rgb(147, 150, 150);
+
+
+color:rgb(54, 53, 53);
+}
+select{
+  color: rgb(75, 66, 95); 
+ 
+
+
+}
+option{
+   color: rgb(75, 66, 95);  
+   
+ 
+}
+
+.post_New_Job_submit{
+    display: block;
+   
+    width: 20%;
+    height: 35px;
+    border-radius:10px;
+    color: darkblue;
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-weight: 400;
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+}
+button:focus{
+  background-color:#f5f6fa;
+  border: 3px solid #273c75;
+  color: black;
+  cursor: pointer;
+}
+.radiobutton_class{
+margin-top: 20px;
+margin-bottom: 20px;
+padding-right: 70px;
+}
+.radiobutton{
+    margin-left: 5%;
+   
+}
+.radiolabel{
+  
+    color: #06127C;
+    font-size: 20px;
+  
+
+    
+    
+}
+.radiobutton_style{
+ 
+  float: right;
+  width: 200px;
+}
+
+@media only screen and (max-width: 992px){
+    button{
+       
+        width: 30%;  
+      }
+      .post_job_description_left_text{
+        font-size:20px ;
+      }
+      .post_job_description_left_button { 
+        font-size: 20px;
+      }
+}
+@media only screen and (max-width: 520px) {
+  p{
+     
+    font-size: 35px;
+  } 
+  .post_job_description_left_text{
+    font-size:15px ;
+  }
+  .post_job_description_left_button { 
+    font-size: 20px;
+  } 
+  label{
+    font-size: 28px;
+  }
+  button{
+    font-size: 20px; 
+    width: 40%;  
+  }
+}

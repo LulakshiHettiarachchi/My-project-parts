@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+body{
+  margin: 0; 
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #585656;
+}
+
+.main_container{
+
+width: 70%;
+height: 500px;
+margin: 10px auto;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding:50px;
+border-radius: 20px;
+
+
+}
+
+.left{
+   
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+.right_picture{
+
+width: 60%;
+
+
+}
+img{
+   width: 500px; 
+   height: 500px;
+   margin: auto; 
+   transition: 0.3s;
+   float:right;
+   border-radius: 20px;
+}
+
+.tittle{
+
+    font-size: 4vw;
+    font-weight: 800;
+    color: #227093;
+
+}
+.description{
+
+font-size: 1vw;
+font-weight: 600;
+
+text-align: justify;
+}
+.button{
+color: white;
+font-size: 20px; 
+font-weight: 600;
+background-color: #227093;
+width: 150px; ;
+height: 30px;;
+border-radius: 30px;
+padding: 10px;
+text-align: center;
+border: 3px;
+}
+
+.button:hover{
+    cursor: pointer;
+    color:#585656 ;
+    background-color: white;
+    border:3px solid #227093;
+}
+
+
+@media only screen and (max-width: 1060px){
+    .main_container{
+        flex-direction: column;
+        min-height:1000px;
+        align-items: center;
+    }
+    .left{
+        width: 80%;
+        min-height: 400px;
+       
+        margin: auto;
+        
+    }
+    .description{
+        font-size: 2vw;
+    }
+  
+}
+@media only screen and (max-width:900px){
+    .main_container{
+        flex-direction: column;
+        min-height:640px;
+      
+    }
+    .left{      
+        min-height: 280px;      
+    }
+    
+    img{
+        width: 100%; 
+        height: auto;
+    }
+}
+@media only screen and (max-width:690px){
+    .main_container{  
+        min-height:550px;   
+    }
+    .left{
+        min-height: 280px;          
+    }
+    .button{
+        width: 120px;
+        height: 20px;
+    }
+    
+}
+@media only screen and (max-width:490px){
+    .main_container{
+        padding: 10px;
+        min-height: 250px;
+        max-height: 400px;
+        justify-content:initial;
+     
+    }
+    .left{
+        min-height: 200px;     
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .button{
+        width: 30vw;
+        height: 3vw;
+        font-size: 0.6em;
+        
+    }
+    
+}

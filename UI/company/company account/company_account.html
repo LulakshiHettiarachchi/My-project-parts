@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="company_account.css">
+    <script src="https://kit.fontawesome.com/f299a8aeaa.js" crossorigin="anonymous"></script>
+    <title>company_account</title>
+</head>
+<body>
+    <form class="main_container">
+        <div class="picture_bar">
+<img src="images/user.png">
+ <div class="row">
+        <label for="profile_pic" class="labelfield">Profile picture</label><br>
+        <input type="file" id="profile_pic" profile_pic="profilepic" placeholder= "profile picture" class="inputfield" accept="image/*" ><br>
+       </div>
+        </div>
+        <div class="row">
+            <label for="name" class="labelfield">Company Name</label><br>
+            <input type="text" id="name" name="name" placeholder= "Name" class="inputfield" required><br>
+        </div>
+        <div class="row">
+            <label for="address" class="labelfield">Company Address</label><br>
+            <input type="text" id=address" address="address" placeholder="Company address " class="inputfield" required><br>
+         
+        </div>
+        <div class="row">
+            <label for="phonenumber" class="labelfield">Phone number</label><br>
+            <input type="text" id="phonenumber" phonenumber="Phone number" placeholder= "phonenumber" class="inputfield" required><br>    
+        </div>
+        
+        <div class="row">
+            <label for="brief_description" class="labelfield"> Brief description</label><br>
+            
+            <textarea  id="brief_description" rows="4" brief_description="brief_description" placeholder="Brief description" class="inputfield" required>
+            </textarea><br>
+        </div>
+        
+        <div class="row">
+            <label for="email" class="labelfield">Email</label><br>
+            <input type="email" id="email" email="email" placeholder= "Email" class="inputfield" required><br>
+        </div>
+    
+        
+    <div class="row">
+       
+        <label for="website_link" class="labelfield">Websitelink</label><br>
+        <input type="url" id="website_link" website_link="websitelink" placeholder= "website link" class="inputfield"><br>
+    </div>
+    
+    <div class="row">
+        <label for="Facebook_link" class="labelfield">Facebook link</label><br>
+        <input type="url" id="Facebook_link" Facebook_link="Facebooklink" placeholder= "Facebook link" class="inputfield"><br>
+    </div>
+        
+    <div class="row">
+        <label for="LinkedIn_link" class="labelfield">LinkedIn link</label><br>
+        <input type="url" id="LinkedIn_link" LinkedIn_link="LinkedInlink" placeholder= "LinkedIn link" class="inputfield"><br>
+    
+    </div>
+        <div class="row">
+            <label for="Twitter_link" class="labelfield">Twitter link</label><br>
+            <input type="url" id="Twitter_link" Twitter_link="Twitterlink" placeholder= "Twitter link" class="inputfield"><br>
+        </div>
+       
+       <div class="row">
+        <label for="short_introduction_video" class="labelfield">Short Introduction video</label><br>
+        <input type="file" id="short_introduction_video" short_introduction_video="shortintroductionvideo" placeholder= "Short Introduction Video" class="inputfield" accept="video/*"><br>
+       </div>
+
+       <div class="submit">
+        <label for="submit" class="labelfield"></label><br>
+        <input type="submit" id="submit" submit="submit"  class="submit_button"><br>
+       </div>
+    </form>
+    <div class="my_jobs">
+        <div class="my_jobs_title">
+            My Job Posts
+        </div>
+        <div class="my_jobs_row_container">
+            <div class="my_jobs_row">
+               <div class="job_id">
+                   <div class="job_id_text">
+                      Job ID
+                   </div>
+                   <div class="job_id_data">
+                       0001
+                   </div>
+
+               </div> 
+               <div class="job_title">
+                <div class="job_title_text">
+                   Job Title
+                </div>
+                <div class="job_title_data">
+                    Senior Engineer
+                </div>
+
+            </div> 
+            <div class="icon">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </div>
+            </div>
+            <div class="my_jobs_row">
+                <div class="job_id">
+                    <div class="job_id_text">
+                       Job ID
+                    </div>
+                    <div class="job_id_data">
+                        0001
+                    </div>
+ 
+                </div> 
+                <div class="job_title">
+                 <div class="job_title_text">
+                    Job Title
+                 </div>
+                 <div class="job_title_data">
+                    Manager Vacancy 
+                 </div>
+ 
+             </div> 
+             <div class="icon">
+                 <i class="fa fa-eye" aria-hidden="true"></i>
+                 <i class="fa fa-pencil" aria-hidden="true"></i>
+                 <i class="fa fa-trash-o" aria-hidden="true"></i>
+             </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
